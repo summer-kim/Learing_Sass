@@ -1,0 +1,69 @@
+@import "config";
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+%btn-shared {
+  margin: 1.5rem 0;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover {
+  background-color: $main-color;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+.bottom-line {
+  width: 40px;
+  border-bottom: $main-color 2px solid;
+  margin: auto;
+}
+.para {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+.bg {
+  &-dark {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+
+  &-light {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
